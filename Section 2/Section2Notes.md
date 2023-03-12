@@ -1,0 +1,11 @@
+# Course Roadmap
+- Docker install, download the resources. 
+- Container Basics
+- Image Basics
+- Docker Networking 
+- Docker Volumes
+- Docker Compose (local dev and test)
+- Orchestration (run on multiple servers)
+- Docker Swarm 
+- Kubernetes 
+- Swarm vs K8s
