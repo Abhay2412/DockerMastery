@@ -15,4 +15,4 @@
 - Kubernetes more support and wider use cases are solved
 - Swarm comes with Docker and one single team and little resource consumption 
 - Swarm is secure and easier to resolve problems 
-- 
+- Kubernetes widest support of the cloud vendors 
