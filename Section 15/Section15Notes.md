@@ -1,0 +1,12 @@
+# Service Types
+- "kubectl expose": Creates an endpoint for the existing pods also known as a service 
+- Does not change the pods and creates an additional feature for the deployment
+- Can add a --type to change from the default which is ClusterIP
+- One set of Kubernetes pods to another set of them
+- ClusterIP is default and always works only good in the cluster for the nodes and other pods 
+- NodePort designed for outside of the cluster and each node is allocated a high port
+- These two will be there in the Kubernetes
+- LoadBalancer is a bunch of automation and creates a cluster IP and node port , and then talk to an external cloud service provide like AWS
+- "kubectl get pods -w": A watch command to see what is happening with the pods, and keep running as things change over time
+- "kubectl get service": The IP that is allocated 
+- "kubectl delete service": To remove the services and deployment 
