@@ -1,0 +1,11 @@
+# Kubernetes Management Techniques
+- Generators are like templates, are like specifications to apply to the cluster
+- A lot of things occur in the background when running the run, create and expose commands 
+- "--dry-run -o yaml": Can output these templates with this command and then use them for as a starting point for the YAML files
+- Kubernetes Imperative we start with a state we know and no deployment exists 
+- Different commands are needed to change the deployment and this easier when we know the state 
+- Kubernetes Declarative don't know the current state, we only know what we want the end result to be 
+- Imperative commands(best for learning): run, expose, scale, edit, create deployment 
+- Imperative objects: create -f file.yml, replace -f file.yml, delete -f file.yml, this is good for small environments single file for each command
+- Declarative objects: apply -f file.yml, this is for bigger environment, harder to understand but easier ot automate 
+- Do not mix these three together 
