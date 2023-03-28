@@ -1,0 +1,22 @@
+# Declarative Kubernetes YAML
+- Declarative objects is more relevant to DevOps and GitOps is also applying the DevOps to the Git automation 
+- "kubectl apply -f filename.yml": That's the command to create, update, a configuration 
+- An YAML file can have a pod, deployment inside it and can create a resource easily 
+- Create/update a whole directory of YAML 
+- YAML is better for humans, JSON is for computers 
+- Can have many resources in a single YAML file or vice versa 
+- Each manifest needs: apiVersion, kind, metadata, and spec
+- Things continue to change so need to know how to make YAML files from scratch without using a pre existing template
+- "kubectl api-resources": Different objects and these are standard and may never need all of these, the KIND column helps what goes in the YAML file 
+- The APIGROUP helps with the apiVersion 
+- "kubectl api-versions": A shorter list of apiVersions we need to worry about 
+- Need to figure out the Kind + apiVersion used together to decide the resource you need to use and before creating the YAML
+- metadata: Just the name of the resource you create
+- spec: Where the most of the action happens 
+- "kubectl explain services --recursive": Shows all the keys which are supported, quick list to show them but no explanation 
+- "kubectl explain services.spec": Subkeys of spec and the type of value they support 
+- "kubectl explain services.spec.type": A specific key of the type 
+- Selector uses pattern matching to find the resource 
+- Label goes under metadata, is a simple list of key:value pair to identifying the resource 
+- Label selectors are used to link the dependencies to connect services and deployments together 
+- Can control how to pair your resources together 
