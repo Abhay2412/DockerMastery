@@ -1,0 +1,18 @@
+# Future of Kubernetes
+- StatefulSets are different from deployments designed to run databases, helps with storages 
+- Stateless is simple and which don't involve databases, for example use APIs for Frontend 
+- With any Container you can add a volume, and can do so in the spec of the YAML file
+- The volumes are tied to a lifecycle of a Pod
+- PersistentVolumes: Defined outside of the pod at the cluster level, separate storage options from using Pod
+- None of the Service types work on the HTTP layer 
+- Ingress Controllers do this with 3rd part proxies 
+- Not installed by default on Kubernetes 
+- Can add 3rd party resources and controllers to Kubernetes 
+- Operator pattern is using customizing code is being implemented with Kubernetes as if it was part of Kubernetes with get go from installation 
+- All kubetcl commands talk to the API of Kubernetes 
+- Helm is a tool which builds templates and comes out of the box and creates manifests 
+- Use random high ports, or use a proxy authentication when using the Kubernetes Dashboard 
+- Namespaces are virtual clusters and not only it filters the command
+- Kubernetes namespaces allows you to create mini clusters 
+- "kubectl get all --all-namespaces": All the APIs containers inside of Kubernetes 
+- 
