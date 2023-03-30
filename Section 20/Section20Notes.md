@@ -1,0 +1,14 @@
+# GitHub Actions Workflows
+- When you push to a main branch, or a pull request is completed can use official docker actions in the yaml file and login into Docker Hub and then do a build
+- Hardcoding the image tag 
+- BuildKit Cache new building engine for building Docker images 
+- It's faster and has new features 
+- Allowed to use caching the layers of the images are stored so when rebuilding the Docker image and helps with this across servers 
+- Can specify a platform list which is same as the Docker Hub
+- Metadata adds intelligence for your labels and tags
+- Only certain tags will get pushed based on the pull request and the destination of the branch
+- Can use the API to create comments in the thread of the pull request 
+- Can even add tags for scanning for vulnerabilities 
+- Can add Unit Testing for the whole repo, build an image just for testing and simulate tests inside the image you built 
+- If successful tests then build the production image 
+- Use the GitHub container registry as the testing registry and use the Docker Hub registry for the production 
