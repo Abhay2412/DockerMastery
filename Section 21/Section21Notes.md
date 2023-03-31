@@ -1,0 +1,12 @@
+# Docker Security 
+- Kernel namespaces two main features in Linux which allow Docker to be possible, take a set of application and limit their access to the resources and what they are allowed to see for example memory, networking and other things
+- Control groups limiting resource usage, for example container by default has all the access so you can limit them to not use all your file space 
+- Do not run random images from DockerHub can put virus and is a way for the hackers to get into your machine
+- Only official images from reputable companies  
+- Docker Bench scans the host which has the Docker installed a configuration checker not a virus scanner 
+- Checks Dockers setup and if something is missing from the host 
+- Do not run the apps as root users in the container non programming languages do this and spawn non root users 
+- User namespaces is a configuration you set in Docker JSON file and specify that run programs as non root user. Docker will create a container with a high level user 
+- Snyk helps you scan your repos for vulnerabilities and also start do it earlier in the development life cycle. Helps you scan the code dependencies 
+- Trivy is for scanning the container images 
+- Content Trust is industry practice which is signing your code 
