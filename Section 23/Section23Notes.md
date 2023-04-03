@@ -1,0 +1,14 @@
+# DevOps and Docker 
+- Security for the images you create, for example Alpine is small so less potential of security loop holes 
+- If the image size doesn't matter go for Ubuntu or CentOS, Alpine is less secure than Ubuntu/CentOS since it has less files 
+- Linux checks the file permissions by making sure the read and write numbers are the same to the root user 
+- More containers to run websites and isolate them into their each container but not as efficient but 6-10 websites then the resource saving is not as significant but if greater number then use one container 
+- Cannot have the same subnet address as the container IP because Docker will think it is part of the network already and clash
+- Docker QEMU runs for other different type of systems and using this as a LinuxVM is a suitable option rather than making the RaspberryPI as the host 
+- Cannot do rolling updates with Docker Compose was never designed for production use or uptime 
+- A single node Swarm server is ideal for production since you don't need to take down your images 
+- Never have hardcoded values for the environment 
+- Store your certificates in Swarm Secrets 
+- Dockerfiles don't need to be called dockerfile can call it anything specify -f the file you want to look for 
+- https://www.portainer.io/ container management tool 
+- Cannot containerize a virtual machine because of the useless space, but a legacy application can be containerized by writing the instructions in the dockerfile 
